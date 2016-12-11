@@ -7,29 +7,42 @@
 
 div {
   background-color: #00FFFF;
+  text-align: center;
+
 }
 p {
-  width: 50px;
+  width: 450px;
   height: 50px;
   border: 1px solid black;
+/*  margin: 10px;*/
 }
 
 #p1 {
   background-color: #A52A2A;
-  float: left;
-  height: 150px;
+  /*clear: left;*/
+
+  float: right;
+
+  height: 50px;
+
 }
 #p2 {
   background-color: #DEB887;
-  float: right;
-  height: 100px;
+    clear: right;
+
+  float: left;
+
+  height: 50px;
 }
 #p3 {
   background-color: #5F9EA0;
-  clear: both;
+  /*clear: right;*/
+  float: right;
 }
 #p4 {
   background-color: #FF7F50;
+  clear: right;
+  float: left;
 }
 
 section {
@@ -42,10 +55,10 @@ section {
 <h1>Floating Elements</h1>
 
 <div>
-  <p id="p1"></p>
-  <p id="p2"></p>
-  <p id="p3"></p>
-  <p id="p4"></p>
+  <p id="p1">1</p>
+  <p id="p2">2</p>
+  <p id="p3">3</p>
+  <p id="p4">4</p>
   <section>This is regular content continuing after the the paragraph boxes.</section>
 </div>
 

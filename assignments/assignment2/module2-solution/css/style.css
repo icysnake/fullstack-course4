@@ -1,1 +1,75 @@
+/*Mobile*/
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+h1 {
+	text-align: center;
+	font-size: 1.75em
+}
+div.col {
+	background-color: #bbb;
+	border: 5px solid black;
+	height: auto;
+	margin: auto;
+	margin-bottom: 25px;
+	width: 90%;
+}
+p.title {
+	border: 3px solid black;
+	position: relative;
+	width: 150px;
+	text-align: center;
+	float: right;
+	margin-top: -3px;
+	margin-right: -3px;
+	font-size: 1.25em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+p.content {
+	width: 90%;
+	clear: right;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+.row {
+	width: 100%;
+}
+.t1 {
+	background-color: pink;
+}
+.t2 {
+	background-color: LightCoral;
+	color: white;
+}
+.t3 {
+	background-color: LemonChiffon;
+}
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#div3, #p3 {
+		width: 95%;
+	}
+	.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-md-12 {
+		width: 100%;
+		float: left;
+	}
+}
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 33.33%;
+		float: left;
+	}
+}

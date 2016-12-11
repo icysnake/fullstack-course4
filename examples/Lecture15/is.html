@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta charset="utf-8">
+<title>Pseudo Class Selectors</title>
+<style>
+/* Styles go here. */
+
+header ul {
+  alignment-baseline: central;
+}
+
+header li {
+  list-style: none;
+}
+
+#link {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  background-color: white;
+}
+
+a:link, a:visited {
+  text-decoration: unset;
+
+  border: 2px solid #aa0;
+  color: black;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+section div:nth-child(odd) {
+  background-color: rgb(255,75,75);
+  text-align: left;
+  color: blue;
+  text-rendering: geometricPrecision;
+  margin-right: 200px;
+}
+
+section div:nth-child(even), span {
+  background-color: rgb(75,75,255);
+  text-align: right;
+  color:  red;
+  margin-left: 200px
+}
+
+section div:hover {
+  background-color: rgb(75,255,75);
+  font-size: 24px;
+  text-align: center;
+}
+header li:nth-child(3):hover {
+  font-size: 24px;
+  background-color: inherit;
+  background-image: url(1.jpg);
+}
+section:hover div:nth-child(11) {
+  font-size: 24px;
+}
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  </ul>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <span>SPAN 1</span>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
+
+<section id="link" style="clear">
+  <div class="row">
+    <div class="col-xs-6" style="text-align: center; clear: right;">Hello!</div>    
+  </div>
+</section>
+</body>
+</html>

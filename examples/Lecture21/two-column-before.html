@@ -5,24 +5,35 @@
 <title>Two Column Design</title>
 <style>
 
+* {
+
+}
+
 div {
   background-color: #00FFFF;
 }
 p {
-  width: 50%;
+  width: 45%;
   border: 1px solid black;
   float: left;
 }
 
-#p1 {
-  background-color: #A52A2A;
+
+@media (min-width: 50px) and (max-width: 500px) {
+  #p1 {
+  background-color: purple;
+  height: 50px;
+
 }
 #p2 {
-  background-color: #DEB887;
+  background-color: yellow;
+  float: right;
+}
+
 }
 
 section {
-  clear: left;
+  clear: both;
 }
 
 
@@ -32,7 +43,17 @@ section {
 <h1>Two Column Design</h1>
 
 <div>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
   <section>This is regular content continuing after the the paragraph boxes.</section>
 </div>
